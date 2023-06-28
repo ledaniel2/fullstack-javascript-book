@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updating Attributes and Styles</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p>My first paragraph.</p>
+        <a target="_blank" href="https://www.google.com">Click Me!</a>
+
+<script>
+let link = document.querySelector('a');
+
+// Get the href attribute
+let href = link.getAttribute('href');
+
+// Set a new href attribute
+link.setAttribute('href', 'https://www.example.com');
+
+// Check if the link has a target attribute
+let hasTarget = link.hasAttribute('target');
+
+// Remove the target attribute
+link.removeAttribute('target');
+
+let title = document.querySelector('h1');
+title.style.color = 'red';
+title.style.fontSize = '2em';
+title.style.textAlign = 'center';
+</script>
+
+    </body>
+</html>

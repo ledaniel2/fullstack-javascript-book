@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling with Promises</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+async function fetchAllData() {
+  try {
+    let responses = await Promise.all([
+      fetch('https://dummyjson.com/products/1'),
+      fetch('https://dummyjson.com/products/2'),
+      fetch('https://dummyjson.com/products/3')
+    ]);
+
+    for (let response of responses) {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      let data = await response.json();
+      console.log(data);
+    }
+  } catch (error) {
+    console.error('There was a problem with your fetch operation: ', error);
+  }
+}
+
+fetchAllData();
+</script>
+
+    </body>
+</html>

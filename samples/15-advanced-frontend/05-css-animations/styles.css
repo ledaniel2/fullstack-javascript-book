@@ -1,0 +1,11 @@
+@keyframes square {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(100px); }
+  50% { transform: translate(100px, 100px); }
+  75% { transform: translateY(100px); }
+  100% { transform: translateX(0); }
+}
+
+.square {
+  animation: square 4s infinite;
+}

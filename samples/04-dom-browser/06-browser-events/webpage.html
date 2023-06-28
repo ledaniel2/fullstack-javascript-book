@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updating Elements</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p>A paragraph.</p>
+        <button>Button</button>
+	<div class="box" style="width: 200px; height: 200px; background-color: gray"></div>
+        <input type="text" id="input" name="input">
+<script>
+let button = document.querySelector('button');
+button.addEventListener('click', () => {
+  console.log('Button was clicked!');
+});
+
+window.addEventListener('load', () => {
+  console.log('Page is fully loaded');
+});
+
+let box = document.querySelector('.box');
+box.addEventListener('mouseover', () => {
+  console.log('Mouse is over the box');
+});
+
+window.addEventListener('keydown', (event) => {
+  console.log(`Key "${event.key}" was pressed`);
+});
+</script>
+
+    </body>
+</html>

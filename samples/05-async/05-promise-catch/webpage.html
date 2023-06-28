@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise and Catch</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise rejected');
+  }, 2000);
+});
+
+promise.catch(error => console.log(error));  // 'Promise rejected' (after 2 seconds)
+</script>
+
+    </body>
+</html>

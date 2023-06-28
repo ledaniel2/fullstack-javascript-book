@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling with Fetch API</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+async function fetchData() {
+  try {
+    let response = await fetch('https://dummyjson.com/products/1');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('There was a problem with your fetch operation: ', error);
+  }
+}
+
+fetchData();
+</script>
+
+    </body>
+</html>

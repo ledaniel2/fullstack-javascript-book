@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Synchronous vs Asynchronous</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+console.log('First');
+console.log('Second');
+console.log('Third');
+
+console.log('First');
+setTimeout(() => console.log('Second'), 0);
+console.log('Third');
+</script>
+
+    </body>
+</html>

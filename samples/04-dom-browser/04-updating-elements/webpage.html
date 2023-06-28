@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updating Elements</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p>My first paragraph.</p>
+        <p>My second paragraph.</p>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+<script>
+let firstParagraph = document.querySelector('p');
+firstParagraph.textContent = 'New text content!';
+
+let secondParagraph = firstParagraph.nextElementSibling;
+secondParagraph.innerHTML = '<strong>New HTML content!</strong>';
+
+let textField = document.querySelector('input[type="text"]');
+textField.value = 'New value!';
+</script>
+
+    </body>
+</html>

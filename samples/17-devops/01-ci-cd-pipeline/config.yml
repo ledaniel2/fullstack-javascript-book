@@ -1,0 +1,35 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:18
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Run Tests
+          command: npm test
+      - setup_remote_docker:
+          version: 20.10.7
+      - run:
+          name: Build and Push Docker Image
+          command: |
+            echo 'export TAG=0.1.$CIRCLE_BUILD_NUM' >> $BASH_ENV
+            echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
+            docker build -t $DOCKERHUB_USER/my-app:$TAG .
+            docker push $DOCKERHUB_USER/my-app:$TAG
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build

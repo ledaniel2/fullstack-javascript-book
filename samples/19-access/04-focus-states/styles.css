@@ -1,0 +1,3 @@
+button:focus, a:focus, input:focus {
+  outline: 3px solid #3b99fc;
+}

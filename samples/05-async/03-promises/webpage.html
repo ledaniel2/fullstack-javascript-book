@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise resolved');
+  }, 2000);
+});
+
+console.log(promise);  // 'Promise {  <pending>, ...'
+
+setTimeout(() => {
+  console.log(promise);  // 'Promise {<fulfilled>: 'Promise resolved'} ...'
+}, 2500);
+</script>
+
+    </body>
+</html>

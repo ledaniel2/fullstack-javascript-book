@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error handling with async</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+async function myFunc() {
+  throw new Error('Something went wrong');
+}
+
+async function runFunc() {
+  try {
+    let result = await myFunc();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+runFunc();
+</script>
+
+    </body>
+</html>

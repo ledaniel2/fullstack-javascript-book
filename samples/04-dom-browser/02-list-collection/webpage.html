@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeList and HTMLCollection</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p class="paragraph">My first paragraph.</p>
+        <p class="paragraph">My second paragraph.</p>
+	<button>Button1</button>
+	<button>Button2</button>
+<script>
+let buttons = document.querySelectorAll('button');
+buttons.forEach(button => console.log(button));
+
+let paragraphs = document.getElementsByClassName('paragraph');
+Array.from(paragraphs).forEach(paragraph => console.log(paragraph));
+</script>
+
+    </body>
+</html>

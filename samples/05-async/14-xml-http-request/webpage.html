@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XMLHttpRequest</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+let xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'https://dummyjson.com/products/1');
+
+xhr.send();
+
+xhr.onload = () => {
+  if (xhr.status == 200) {
+    console.log(JSON.parse(xhr.response));
+  } else {
+    console.log('Error', xhr.status, xhr.statusText);
+  }
+};
+
+xhr.onerror = () => {
+  console.log('Request failed');
+};
+</script>
+
+    </body>
+</html>

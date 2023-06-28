@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyword async</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+async function myFunc() {
+  return 'Hello World';
+}
+
+console.log(myFunc());  // 'Promise { 'Hello World', ...'
+
+myFunc().then(console.log);  // 'Hello World'
+</script>
+
+    </body>
+</html>

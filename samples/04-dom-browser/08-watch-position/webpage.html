@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Updating Location</title>
+    </head>
+    <body>
+
+<p id="lat"></p>
+<p id="lon"></p>
+
+<button id="stop">Stop Updates</button>
+
+<script>
+let options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+
+let watchID = navigator.geolocation.watchPosition((position) => {
+  document.getElementById('lat').textContent = `Latitude: ${position.coords.latitude}`;
+  document.getElementById('lon').textContent = `Longitude: ${position.coords.longitude}`;
+}, (error) => {
+  console.error(`Error Code = ${error.code} - ${error.message}`);
+}, options);
+
+document.querySelector('#stop').addEventListener('click', () => {
+  navigator.geolocation.clearWatch(watchID);
+  console.log('No longer updating.');
+});
+</script>
+
+    </body>
+</html>

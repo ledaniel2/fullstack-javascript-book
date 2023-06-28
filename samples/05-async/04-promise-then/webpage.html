@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise and Then</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise resolved');
+  }, 2000);
+});
+
+promise.then(
+  result => console.log(result),  // 'Promise resolved' (after 2 seconds)
+  error => console.log(error)
+);
+</script>
+
+    </body>
+</html>

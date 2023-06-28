@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with Timers</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+setTimeout(() => {
+  alert('This alert box was called with the setTimeout function');
+}, 3000);
+
+setInterval(() => {
+  console.log('This is logged every 2 seconds');
+}, 2000);
+
+function animate() {
+  console.log('Animation frame');
+  requestAnimationFrame(animate);
+}
+
+requestAnimationFrame(animate);
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise.allSettled</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+let promise1 = Promise.resolve('Promise 1 resolved');
+let promise2 = Promise.reject('Promise 2 rejected');
+
+Promise.allSettled([promise1, promise2])
+  .then(results => console.log(results));
+</script>
+
+    </body>
+</html>

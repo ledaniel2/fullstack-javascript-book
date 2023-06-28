@@ -1,0 +1,6 @@
+mutation {
+  addUser(name: "New User", email: "newuser@example.com") {
+    id
+    name
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form action="/submit" method="post">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters" required><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>

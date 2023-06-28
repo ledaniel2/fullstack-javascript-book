@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyword await</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+async function myFunc() {
+  return 'Hello World';
+}
+
+async function displayResult() {
+  let result = await myFunc();
+  console.log(result);
+}
+
+displayResult();
+</script>
+
+    </body>
+</html>

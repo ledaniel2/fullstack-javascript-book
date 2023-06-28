@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Callback Function</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+function greet(name, callback) {
+  console.log('Hello ' + name);
+  callback();
+}
+
+greet('Alice', () => {
+  console.log('Callback function executed');
+});
+</script>
+
+    </body>
+</html>

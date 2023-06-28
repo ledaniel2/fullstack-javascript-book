@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise with Timeout</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+function timeout(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function run() {
+  console.log('Start');
+  await timeout(2000);
+  console.log('End');
+}
+
+run();
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  score: 3,
+  comparative: 0.6,
+  calculation: [ { love: 3 } ],
+  tokens: [
+    'i',     'love',
+    'learning', 'about',
+    'machine', 'learning',
+    'and',    'artificial',
+    'intelligence'
+  ],
+  words: [ 'love' ],
+  positive: [ 'love' ],
+  negative: []
+}

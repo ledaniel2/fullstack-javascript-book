@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating the DOM</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p class="paragraph">My first paragraph.</p>
+
+<script>
+let newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is a new paragraph.';
+document.body.appendChild(newParagraph);
+
+newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is another new paragraph.';
+let referenceNode = document.querySelector('.paragraph');
+document.body.insertBefore(newParagraph, referenceNode);
+</script>
+
+    </body>
+</html>

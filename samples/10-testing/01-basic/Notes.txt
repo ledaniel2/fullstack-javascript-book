@@ -1,0 +1,11 @@
+Note that at the time of writing, with Jest 29.5.0 and Node.js 18.60.0,
+simply running "npm test" in this directory does NOT work. Either do:
+
+(Windows)
+
+set NODE_OPTIONS=--experimental-vm-modules
+npm test
+
+(or Others)
+
+NODE_OPTIONS=--experimental-vm-modules npm test

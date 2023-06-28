@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RxJS Observables</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script type="module"> // Note: type="module" is needed when using import
+import rxjs from 'https://dev.jspm.io/rxjs@6';
+const { Observable } = rxjs;
+
+const observable = new Observable(subscriber => {
+  subscriber.next(1);
+  subscriber.next(2);
+  setTimeout(() => {
+    subscriber.next(3);
+    subscriber.complete();
+  }, 1000);
+});
+
+console.log('Before subscribe');
+observable.subscribe({
+  next(x) { console.log('Got value ' + x); },
+  error(err) { console.error('Something wrong occurred: ' + err); },
+  complete() { console.log('Done'); }
+});
+console.log('After subscribe');
+</script>
+
+    </body>
+</html>

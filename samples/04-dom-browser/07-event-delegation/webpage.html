@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Delegation</title>
+    </head>
+    <body>
+
+<ul id="todoList">
+  <li>Buy milk</li>
+  <li>Walk the dog</li>
+</ul>
+
+<button id="addTodo">Add a todo</button>
+
+<script>
+document.querySelector('#todoList').addEventListener('click', (event) => {
+  if (event.target.tagName.toLowerCase() === 'li') {
+    console.log(`You clicked on todo: ${event.target.textContent}`);
+  }
+});
+
+document.querySelector('#addTodo').addEventListener('click', () => {
+  let newTodo = document.createElement('li');
+  newTodo.textContent = 'New todo item';
+  document.querySelector('#todoList').appendChild(newTodo);
+});
+</script>
+
+    </body>
+</html>

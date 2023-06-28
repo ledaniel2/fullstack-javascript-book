@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File I/O Simulation</title>
+    </head>
+    <body>
+
+<p>(View the output in DevTools/Console)</p>
+
+<script>
+function readFile(fileName) {
+  return new Promise((resolve, reject) => {
+    // Simulate an asynchronous file read with setTimeout
+    setTimeout(() => {
+      if (fileName === 'notfound.txt') {
+        reject(new Error(`File not found: ${fileName}`));
+      } else {
+        resolve(`File contents of ${fileName}: Hello, world!`);
+      }
+    }, 1000);
+  });
+}
+
+async function run() {
+  try {
+    let contents = await readFile('hello.txt');
+    console.log(contents);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+run();
+</script>
+
+    </body>
+</html>

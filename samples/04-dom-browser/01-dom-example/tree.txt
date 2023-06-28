@@ -1,0 +1,14 @@
+Document
+│
+└── html
+    ├── head
+    │   └── title
+    │       └── #text: "My Web Page"
+    └── body
+        ├── h1
+        │   └── #text: "Welcome to My Web Page!"
+        ├── p
+        │   └── #text: "This is a paragraph."
+        └── div
+            └── p
+                └── #text: "This is another paragraph."
