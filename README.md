@@ -32,38 +32,38 @@ Note that not all of the resources referenced above are currently available onli
 
 ## Book Contents
 
-0. [Overview](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/00-overview.md)
-1. [Introduction to Fullstack Web Development](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/01-introduction.md)
-2. [JavaScript Essentials: From Novice to Fullstack](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/02-javascript.md)
-3. [HTML and CSS for Web Developers](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/03-html-css.md)
-4. [Exploring the DOM and Browser APIs](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/04-dom-browser.md)
-5. [Asynchronous JavaScript and Promises](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/05-async.md)
-6. [Introduction to Node.js and NPM](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/06-node.md)
-7. [Working with Databases](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/07-databases.md)
-8. [User Authentication and Authorization](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/08-auth.md)
-9. [Frontend JavaScript Frameworks and Libraries](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/09-frameworks.md)
-10. [Testing and Deployment](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/10-testing.md)
-11. [Web Performance Optimization](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/11-optimization.md)
-12. [Security and Best Practices](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/12-security.md)
-13. [Real-Time Web Development with WebSockets](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/13-sockets.md)
-14. [Building Progressive Web Applications](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/14-webapps.md)
-15. [Advanced Frontend Development Techniques](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/15-advanced-frontend.md)
-16. [Advanced Backend Development Techniques](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/16-advanced-backend.md)
-17. [DevOps for Fullstack Developers](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/17-devops.md)
-18. [Machine Learning and Artificial Intelligence in Fullstack Development](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/18-ml-ai.md)
-19. [Accessibility in Web Development](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/19-access.md)
-20. [Serverless Computing and Functions as a Service (FaaS)](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/20-serverless.md)
-21. [WebAssembly and Blazor](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/21-wasm.md)
-22. [Building Cross-Platform Mobile Applications](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/22-cross-platform.md)
-23. [Web Scraping and Automation](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/23-web-scraping.md)
-24. [Building Blockchain Applications with JavaScript](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/24-blockchain.md)
-25. [Building Web Applications with GraphQL](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/25-graphql.md)
-26. [Building Chatbots and Voice Assistants with JavaScript](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/26-chatbots.md)
-27. [Building Augmented and Virtual Reality Applications](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/27-ar-vr.md)
-28. [Building IoT Applications with JavaScript](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/28-iot.md)
-29. [Version Control Systems](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/29-vcs.md)
-30. [Working with Legacy Code](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/30-legacy-code.md)
-31. [The Future of Fullstack Web Development](https://github.com/ledaniel2/fullstack-javascript-book/blob/main/31-career.md)
+0. Overview
+1. Introduction to Fullstack Web Development
+2. JavaScript Essentials: From Novice to Fullstack
+3. HTML and CSS for Web Developers
+4. Exploring the DOM and Browser APIs
+5. Asynchronous JavaScript and Promises
+6. Introduction to Node.js and NPM
+7. Working with Databases
+8. User Authentication and Authorization
+9. Frontend JavaScript Frameworks and Libraries
+10. Testing and Deployment
+11. Web Performance Optimization
+12. Security and Best Practices
+13. Real-Time Web Development with WebSockets
+14. Building Progressive Web Applications
+15. Advanced Frontend Development Techniques
+16. Advanced Backend Development Techniques
+17. DevOps for Fullstack Developers
+18. Machine Learning and Artificial Intelligence in Fullstack Development
+19. Accessibility in Web Development
+20. Serverless Computing and Functions as a Service (FaaS)
+21. WebAssembly and Blazor
+22. Building Cross-Platform Mobile Applications
+23. Web Scraping and Automation
+24. Building Blockchain Applications with JavaScript
+25. Building Web Applications with GraphQL
+26. Building Chatbots and Voice Assistants with JavaScript
+27. Building Augmented and Virtual Reality Applications
+28. Building IoT Applications with JavaScript
+29. Version Control Systems
+30. Working with Legacy Code
+31. The Future of Fullstack Web Development
 
 All text and code Copyright (c) 2023 Richard Spencer
 
